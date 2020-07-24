@@ -1,0 +1,25 @@
+<div class="card">
+  <div class="card-body text-center">
+    <img width="150px" height="150px" class="rounded-circle img-thumbnail border-info" [src]="user.picture?.large"
+      alt="">
+    <div class="card-title text-primary">
+      <h1>
+        <span class="px-2">{{user.name?.title}}</span>
+        <span class="px-2">{{user.name?.first}}</span>
+        <span class="px-2">{{user.name?.lsat}}</span>
+      </h1>
+    </div>
+    <div class="card-text">
+      <fa-icon [icon]="faEnvelope"></fa-icon>
+      {{user.email}}
+    </div>
+    <div class="card-text">
+      <fa-icon [icon]="faMapMarkedAlt"></fa-icon>
+      {{user.location?.city}}, {{user.location?.state}}
+    </div>
+    <div class="card-text">
+      <fa-icon [icon]="faPhone"></fa-icon>
+      {{user.phone}}
+    </div>
+  </div>
+</div>
